@@ -1,0 +1,60 @@
+1.write a logic to swap two numbers without using third variable
+
+for example input a= 5, b = 6 
+output as a = 6 , b = 5
+---------------
+
+int a=5, b=6;
+b= a+b; // b =11
+a= b-a; // a =11-5= 6 
+b= b-a; // b =11-6= 5
+
+
+2.write a logic to swap two numbers with using third variable
+
+for example a= 5, b = 6 
+output as a = 6 , b = 5
+----------------
+#include <stdio.h>
+void main()
+{
+    int a = 5, b = 6, c;
+
+    printf("Given value of a,b : %d,%d", a, b);
+
+    c = b;
+
+    b = a;
+    a = c;
+
+    printf("New value of a,b : %d,%d", a, b);
+}
+
+
+
+3. write a logic to make the sum of digits of two two number
+
+input as 34 output as 7
+----------------
+
+int num= 34 ;
+
+printf("Sum = %d",(num/10)+(num % 10));
+
+
+
+4. write a logic to make a sum of two numbers without using + operator
+
+input as a=5, b=6  
+output as 11
+-----------------
+
+int a=5, b=6 ;
+
+printf("Given numbers = %d,%d", a,b);
+printf("sum = %d",  - (-a-b));
+
+
+
+
+
