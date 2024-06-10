@@ -55,6 +55,47 @@ printf("Given numbers = %d,%d", a,b);
 printf("sum = %d",  - (-a-b));
 
 
+5. Write a c program to find the next multiple of 10 of a given two digit number, if the given number's last digit is less than 5 then 
+
+find the previous multiple of 10 and if the given number's last digit is greater than or equal to 5 then find the next multiple of 10.
+
+[Don't use if else or ternary operator ]
+-----------
+#include <stdio.h>
+void main()
+{
+    int a = 49;
+
+    int r = a % 10;
+    int num = a + r;
+    
+    printf("\nNext Multiple of 10 for %d is : %d", a, (num/10)*10);
+}
+
+
+6. Write a program to take input for seconds from the user , And convert it into Hour, Minutes , Second format.
+----------
+
+#include<stdio.h>
+
+int main()
+{
+    int hr, min, sec, inp ;
+    
+    printf("Enter the seconds : ");
+    scanf("%d", &inp);
+    
+    hr = inp / 3600;
+    min = inp % 3600;
+    min = min / 60;
+    sec = inp % 60;
+    
+    printf("Hr : Min : Sec = %d hr : %d min : %d sec", hr, min, sec);
+    
+    return 0;
+   
+}
+
 
 
 
